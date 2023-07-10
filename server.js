@@ -6,6 +6,7 @@ const db = require("./db")
 const mongoose = require("mongoose")
 const { adAds, getAds } =  require("./controllers/ads")
 app.use(express.json())
+app.use(cors())
 
 
 mongoose.connect(db.url).then(()=>{
