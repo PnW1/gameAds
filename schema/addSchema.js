@@ -1,7 +1,9 @@
 const mongoose = require("mongoose")
 
 const adSchema = new mongoose.Schema({
-    name : String,
+    title : String,
+    description : String,
+    probability : Number,
     url  : String    
 })
 
